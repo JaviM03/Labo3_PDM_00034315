@@ -15,7 +15,7 @@ public class NewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_new);
         Intent mIntent=getIntent();
         mTextView =findViewById(R.id.tv_message);
-        if (mIntent!=null){
+        if (mIntent!=null ){
             mTextView.setText(mIntent.getStringExtra(appConstant.TEXT_KEY));
         }
     }
